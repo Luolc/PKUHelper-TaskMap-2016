@@ -31,7 +31,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
+        <p>（建议在PC浏览）</p>
+
+<h3>
 <a id="general" class="anchor" href="#general" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h3>
 
 <p>PKU Helper开发组是一个技术氛围浓厚的团队，汇集了当今校内最为活跃的开发者们。在团队里你可以同一群对开发有着异乎寻常热情的小伙伴们一起，Learn from each other，Hack everything. 加入开发组的这一年是我成长最快速的时期，也是这一段经历让我深切体会到环境对于一个开发者而言的重要性。如果你热爱开发，热爱开源与分享，并由衷的希望靠自己的一行行代码提升园子里每个人的生活体验，欢迎加入我们。</p>
@@ -65,6 +67,37 @@
 
 <h3>
 <a id="tasks" class="anchor" href="#tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tasks</h3>
+
+<h4>
+<a id="litesyllabusview" class="anchor" href="#litesyllabusview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LiteSyllabusView</h4>
+
+<p><a href="https://github.com/Luolc/LiteSyllabusView">View on Github</a>. </p>
+
+<p>这是目前PKU Helper for Android 3.0中课程表使用的自定义View，出于未来开源时协议选取的考虑，该模块从设计开始就从Helper中分离。这是我接手Android早期的代码，如你所见有很多冗余糟糕的写法，功能目前也有很多欠缺。请提交任何可以完善此开源库的PR，包括添加代码注释和使用文档。<strong>建议每个人都试着参与此项任务</strong>。</p>
+
+<h4>
+<a id="通知栏网关窗口小部件" class="anchor" href="#%E9%80%9A%E7%9F%A5%E6%A0%8F%E7%BD%91%E5%85%B3%E7%AA%97%E5%8F%A3%E5%B0%8F%E9%83%A8%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>通知栏网关/窗口小部件</h4>
+
+<p>目前PKU Helper采用的通知栏网关/窗口小部件仍是2.0+版本的，请尝试自己实现网关通知栏/小部件的UI，以解决其目前存在的<code>小部件无法自适应屏幕宽度</code>、<code>通知栏看不清字</code>、<code>通知栏期望添加夜间模式</code>等用户反馈的问题。注：仅实现UI即可，无须实现实际的连网功能。</p>
+
+<h4>
+<a id="imageview显示本地图片" class="anchor" href="#imageview%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ImageView显示本地图片</h4>
+
+<p>请实现如下功能：一个布局，仅含有一个固定长宽的ImageView。点击ImageView可以从本地浏览图片，选择后将图片显示在ImageView中。关闭应用，下次打开时仍加载上次选择的图片。提示：使用Glide/Picasso/Fresco等开源库可以极大的简化你的代码。</p>
+
+<p>这个功能将会在3.0正式版中用做更换左侧边栏header图片，如果你实现的很出色，我会直接在正式版使用你的代码并将你纳入到contributor一栏。</p>
+
+<h4>
+<a id="树洞详情页" class="anchor" href="#%E6%A0%91%E6%B4%9E%E8%AF%A6%E6%83%85%E9%A1%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>树洞详情页</h4>
+
+<p>请重新设计树洞详情页(点击一条树洞后进入的包含回复的页面)的布局，按照Material Design设计规范，格式相同的Comment是不适合用Card表现的。楼主发言的header也可以有更加优雅的实现。请参考设计规范，自由发挥。注：仅实现UI即可。</p>
+
+<h4>
+<a id="检查更新功能" class="anchor" href="#%E6%A3%80%E6%9F%A5%E6%9B%B4%E6%96%B0%E5%8A%9F%E8%83%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>检查更新功能</h4>
+
+<p>请思考如何实现app的检查更新功能。提示，获取当前app的versionCode → 从服务器获取最新版本的versionCode → 下载apk文件并自动安装。</p>
+
+<p>你可以使用<a href="http://www.pkuhelper.com/services/version/version.php?platform=Android&amp;flavor=beta">http://www.pkuhelper.com/services/version/version.php?platform=Android&amp;flavor=beta</a>这个接口。</p>
       </section>
     </div>
 
