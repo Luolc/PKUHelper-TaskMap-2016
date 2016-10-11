@@ -271,6 +271,12 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+#qrcode {
+  width: 732px;
+  height: 551px;
+  background: url('../images/wechat_qrcode.png') no-repeat 0% 90%;
+}
+
 #forkme_banner {
   display: block;
   position: absolute;
